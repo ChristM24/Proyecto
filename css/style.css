@@ -47,7 +47,13 @@ table {
 	src: url('../fonts/carouselambra-webfont.eot?') format('eot'), 
 	     url('../fonts/carouselambra-webfont.woff') format('woff'), 
 	     url('../fonts/carouselambra-webfont.ttf')  format('truetype'),
-	     url('../fonts/carouselambra-webfont.svg#CarouselambraRegular') format('svg');
+		 url('../fonts/carouselambra-webfont.svg#CarouselambraRegular') format('svg');
+		 
+	
+}
+@font-face{
+	font-family:'hodyicons';
+	src: url('../fonts/hodyicons.woff') format('woff');
 }
 
 
@@ -60,6 +66,7 @@ font-family: 'Luckiest Guy', cursive;*/
 body{
     font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
 }
+
 
 
 .logo{
@@ -88,8 +95,9 @@ body{
     
     
 }
-
-
+.posicion{
+margin-bottom: -1px;
+}
 
 
 /*---------Boton Responsive---------------*/
@@ -121,6 +129,8 @@ body{
 }
 /*------------------------------------------------*/
 
+
+
 /*--CARROUSEL*/
 .dot {
     cursor: pointer;
@@ -143,11 +153,8 @@ body{
 	 height:60%;
 	 margin-left: -20px;
 	 
-
-	 
-	
-	
  }
+
  .welcome{
 	 font-family: 'carouselambra';
 	 font-size: 38px;
@@ -158,6 +165,123 @@ body{
 	
  }
 
+/*-----Section FOOD-----*/
+
+
+
+ .menuu{
+		
+		 background-color: #f7f7f7;
+		 padding: 150px 0;
+ }
+
+ .menu{
+	box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+	width: 100%;
+	
+ }
+
+.cajatexto{
+	
+	margin:20px 0 50px 0;
+	text-align: center;
+}
+ .textor{
+	 font-size: 50px;
+	font-family: 'Pacifico';
+ }
+
+ .box{
+	background-color: #fff;
+	padding:75px;	
+	padding-top: 25px;
+    position: relative;
+ }
+ .box.with-box-shadow{
+	box-shadow: 0 0 50px 0 rgba(0,0,0,0.5);
+ }
+
+
+
+
+ .icon-tabs {
+    border-bottom: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.icon-tabs.cols-4>li {
+    width: 25%;
+}
+.icon-tabs >li {    
+    display: inline-block;
+	float: none;
+}
+
+.icon-tabs > li.active > a {
+	color: #ff4656;
+	opacity: 1;
+    border: 0;
+    background-color: transparent;    
+    cursor: pointer;
+    outline: none;
+	}
+
+.icon-tabs >li >a {
+	text-transform: uppercase;
+	padding: 15px 0;
+	letter-spacing: 0.1em;
+	font-size: 11px;
+	border-radius: 0;
+	color: #2d2d2d;
+	font-family: "Montserrat", sans-serif;
+	background-color: transparent;
+	border: 0;
+	margin-right: 0;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: .7;
+	text-decoration: none;
+}
+.icon-tabs >li >a >i {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.hc-food {
+	font-family: 'hodyicons';
+
+}
+
+.hc-food:before {
+    content: "\e0a5";
+}
+
+.hc-cultery{
+	font-family: 'hodyicons';
+}
+.hc-cultery:before{
+	content: "\e0ed";
+}
+
+
+.hc-drinks{
+	font-family: 'hodyicons';
+
+}
+.hc-drinks:before{
+	content:"\e0eb";
+}
+
+.hc-croissant{
+	font-family: 'hodyicons';
+
+}
+.hc-croissant:before{
+	content: "\e0ee";
+}
+
 
 
 
@@ -165,20 +289,35 @@ body{
 /*----Medida pantalla Laptops------*/
 @media screen and (min-width: 993px) and (max-width: 1200px){
 	
-		
-	}
-	
-
+}
 
 
 /*Media query para tablets*/
 @media screen and (min-width: 769px) and (max-width: 992px){
+	
+	.textor{
+		font-size: 35px;
+	}
+
+	.menuu{
+		width: 70%;
+	}
 	
 }
 
 
 /*Media Query para mobiles*/
 @media screen and (max-width: 768px){
+	.navbar-light .navbar-nav .nav-link{
+		font-size:25px;
+	}
+
+
+	.logo{
+		display: none;
+	}
+
+
 	.welcome{
 		line-height: 500px;
 		
@@ -186,13 +325,32 @@ body{
 	.posicion{
 		position: absolute;
 		margin-top: 30px;
+	
 		
 	}
 
+
+	.textor{
+		font-size: 20px;
+	}
+
+	.menuu{
+		
+		
+		padding-top: 20px;
 }
+ .icon-tabs.cols-4>li{
+	 width: 50%;
+	 margin-bottom: 20px;
+ }
+ .icon-tabs >li >a {
+	 font-size: 8px;
+	 opacity:none;
+	
+ }
 
 /*--------------------------------------------------------*/
-
+}
 
 
 
