@@ -55,7 +55,10 @@ table {
 	font-family:'hodyicons';
 	src: url('../fonts/hodyicons.woff') format('woff');
 }
-
+@font-face {
+	font-family: 'Quattrocento';
+	src: url('../fonts/OZpEg_xvsDZQL_LKIF7q4jP3w2j6.woff2')
+}
 
 
 /*Tipografias*/
@@ -173,6 +176,7 @@ margin-bottom: -1px;
 		
 		 background-color: #f7f7f7;
 		 padding: 150px 0;
+		
  }
 
  .menu{
@@ -208,7 +212,7 @@ margin-bottom: -1px;
 
  .icon-tabs {
     border-bottom: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .icon-tabs.cols-4>li {
@@ -284,6 +288,102 @@ margin-bottom: -1px;
 
 
 
+.text-center{
+	text-align: center;
+}
+.tab-content>.active {
+    display: block;
+}
+.fade.in{
+	opacity: 1;
+}
+
+
+
+.agape-menu2{
+	padding-left: 0;
+    list-style: none;
+    margin: 0;
+    text-align: left;
+
+}
+
+
+.agape-menu2>li.menu-item-with-text{
+	
+	padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    margin: 10px 0;
+
+}
+.agape-menu2 >li{
+	overflow: hidden;
+}
+.serif{
+	font-family: "Quattrocento",serif;
+}
+
+.agape-menu2 >li.menu-item{
+	padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    margin: 10px 0;
+}
+
+
+.agape-menu2 >li .agape-menu-pic{
+	width: 15%;
+    float: left;
+}
+.agape-menu2 >li .agape-menu-pic img{
+		border-radius: 50%;
+		width: 85px;
+
+	} 
+img{
+	max-width: 100%;
+	height: auto;
+	}
+
+
+.agape-menu2 >li .agape-menu-content{
+	float: left;
+    width: 85%;
+	padding-left: 15px;
+	
+}
+.agape-menu2 >li.serif h4{
+	font-size: 13px;
+	letter-spacing: 0;
+}
+.agape-menu2 >li h4{
+	margin: 0;
+}
+
+.fonth4{
+	font-family: 'Quattrocento';
+	font-variant: small-caps;
+	text-transform: none ;
+	font-size: 17px;
+	color: #2d2d2d;
+}
+
+
+.agape-menu2 >li.serif.agape-valor{
+
+	font-size: 80%;
+	
+}
+.agape-menu2 >li .agape-valor{
+	float: right;
+    
+}
+.agape-menu2 >li .agape-menu-text{
+	line-height: inherit;
+    margin-top: 10px;
+    max-width: 90%;
+
+}
+
 
 
 /*----Medida pantalla Laptops------*/
@@ -302,6 +402,7 @@ margin-bottom: -1px;
 	.menuu{
 		width: 70%;
 	}
+	
 	
 }
 
@@ -334,23 +435,34 @@ margin-bottom: -1px;
 		font-size: 20px;
 	}
 
-	.menuu{
-		
+	.menuu{	
 		
 		padding-top: 20px;
 }
+
+.box{
+	padding: 35px;
+	
+	
+}
  .icon-tabs.cols-4>li{
 	 width: 50%;
-	 margin-bottom: 20px;
+	margin-bottom: 20px; 
+	
+ }
+.nav{
+	padding: 0px;
+}
+ .icon-tabs >li {
+	display: inline-block;
+    float: none;
  }
  .icon-tabs >li >a {
-	 font-size: 8px;
+	 font-size: 9px;
 	 opacity:none;
 	
  }
 
-/*--------------------------------------------------------*/
+
 }
-
-
 
